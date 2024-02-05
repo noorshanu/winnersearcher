@@ -32,8 +32,8 @@ const Table = () => {
       <table className="border-collapse border border-gray-600 w-full">
         <thead>
           <tr>
-            <th className="border border-gray-600 px-3 py-2">ID</th>
-            <th className="border border-gray-600 px-3 py-2">Name</th>
+            <th className="border border-gray-600 px-3 py-2"> User ID</th>
+            <th className="border border-gray-600 px-3 py-2">User Name</th>
             <th className="border border-gray-600 px-3 py-2">Number of Quests</th>
             <th className="border border-gray-600 px-3 py-2">XP</th>
             <th className="border border-gray-600 px-3 py-2">$KIX Reward</th>
