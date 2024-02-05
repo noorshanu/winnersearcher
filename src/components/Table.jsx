@@ -21,37 +21,56 @@ const Table = () => {
   const paginate = pageNumber => setCurrentPage(pageNumber);
 
   return (
-    <div>
+    <>
+    
+    
+    <div className="overflow-x-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100 scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
       <input
         type="text"
         placeholder="Search by USER ID or USER NAME"
-        className="border border-gray-300 px-3 py-2 rounded-md mb-4 w-[300px]"
+        className="border border-gray-300 px-3 py-2 rounded-md mb-4 w-full sm:w-auto"
         value={searchTerm}
         onChange={e => setSearchTerm(e.target.value)}
       />
-      <table className="border-collapse border border-gray-600 w-full">
-        <thead>
-          <tr>
-            <th className="border border-gray-600 px-3 py-2"> User ID</th>
-            <th className="border border-gray-600 px-3 py-2">User Name</th>
-            <th className="border border-gray-600 px-3 py-2">Number of Quests</th>
-            <th className="border border-gray-600 px-3 py-2">XP</th>
-            <th className="border border-gray-600 px-3 py-2">$KIX Reward</th>
-          </tr>
-        </thead>
-        <tbody>
-          {currentItems.map(item => (
-            <tr key={item.id}>
-              <td className="border border-gray-600 px-3 py-2">{item.id}</td>
-              <td className="border border-gray-600 px-3 py-2">{item.name}</td>
-              <td className="border border-gray-600 px-3 py-2">{item.quest}</td>
-              <td className="border border-gray-600 px-3 py-2">{item.xp}</td>
-              <td className="border border-gray-600 px-3 py-2">{item.reward}</td>
+      <div className="shadow sm:rounded-lg">
+        <table className="w-full divide-y divide-gray-200">
+          <thead className="bg-gray-50">
+            <tr>
+              <th scope="col" className="px-3 py-2 sm:px-6 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                User ID
+              </th>
+              <th scope="col" className="px-3 py-2 sm:px-6 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                User Name
+              </th>
+              <th scope="col" className="px-3 py-2 sm:px-6 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                Number of Quests
+              </th>
+              <th scope="col" className="px-3 py-2 sm:px-6 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                XP
+              </th>
+              <th scope="col" className="px-3 py-2 sm:px-6 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                $KIX Reward
+              </th>
             </tr>
-          ))}
-        </tbody>
-      </table>
-      <div className="flex justify-between mt-4">
+          </thead>
+          <tbody className="bg-white divide-y divide-gray-200">
+            {currentItems.map(item => (
+              <tr key={item.id} className="hover:bg-gray-100">
+                <td className="px-3 py-2 sm:px-6 sm:py-4 whitespace-nowrap">{item.id}</td>
+                <td className="px-3 py-2 sm:px-6 sm:py-4 whitespace-nowrap">{item.name}</td>
+                <td className="px-3 py-2 sm:px-6 sm:py-4 whitespace-nowrap">{item.quest}</td>
+                <td className="px-3 py-2 sm:px-6 sm:py-4 whitespace-nowrap">{item.xp}</td>
+                <td className="px-3 py-2 sm:px-6 sm:py-4 whitespace-nowrap">{item.reward}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+  
+    </div>
+
+
+    <div className="flex justify-between mt-4">
         <button
           onClick={() => paginate(currentPage - 1)}
           disabled={currentPage === 1}
@@ -70,7 +89,8 @@ const Table = () => {
           Next
         </button>
       </div>
-    </div>
+    </>
+
   );
 };
 
