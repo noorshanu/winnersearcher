@@ -24,8 +24,8 @@ const Table = () => {
     <div>
       <input
         type="text"
-        placeholder="Search by ID or Name"
-        className="border border-gray-300 px-3 py-2 rounded-md mb-4"
+        placeholder="Search by USER ID or USER NAME"
+        className="border border-gray-300 px-3 py-2 rounded-md mb-4 w-[300px]"
         value={searchTerm}
         onChange={e => setSearchTerm(e.target.value)}
       />
