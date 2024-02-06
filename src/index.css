@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+  background-color: #04181c;
+}
 
 
 .lh-0-5 {
@@ -47,21 +55,11 @@
     }
   }
   
-
-  @media (min-width: 640px) {
-    /* table {
-      display: inline-table !important;
-    }
-
-    thead tr:not(:first-child) {
-      display: none;
-    } */
+  .archo-black{
+    font-family: 'Archivo Black', sans-serif;
+  }
+  
+  .font-work{
+    font-family: 'Work Sans', sans-serif;
   }
 
-  /* td:not(:last-child) {
-    border-bottom: 0;
-  }
-
-  th:not(:last-child) {
-    border-bottom: 2px solid rgba(0, 0, 0, .1);
-  } */

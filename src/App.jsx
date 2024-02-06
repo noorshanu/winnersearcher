@@ -1,18 +1,16 @@
-import Table from "./components/Table"
-
+import Navbar from "./components/Navbar";
+import Table from "./components/Table";
 
 function App() {
- 
-
   return (
     <>
-    <div className="container-wrapper mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">Data Table</h1>
-  <Table/>
-    </div>
-
+      <div className="container-wrapper mx-auto p-4">
+        <Navbar />
+        <h1 className="text-4xl text-center my-6 archo-black text-white font-bold mb-4">Zealy Sprint 1 Rewards</h1>
+        <Table />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

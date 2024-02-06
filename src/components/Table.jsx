@@ -1,19 +1,28 @@
 import React, { useState } from 'react';
-import { FiSearch } from 'react-icons/fi';
-import data from '../win.json';
 
-const ITEMS_PER_PAGE = 30; // Change this value as needed
+import data from '../win.json';
+import 'react-tooltip/dist/react-tooltip.css'
+import { Tooltip } from 'react-tooltip'
+
+const ITEMS_PER_PAGE = 15; // Change this value as needed
 
 const Table = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
+  const [expandedUserId, setExpandedUserId] = useState('');
 
   const handleSearchChange = event => {
     const value = event.target.value;
     setCurrentPage(1); // Reset current page when search term changes
     setSearchTerm(value);
   };
-
+  const toggleExpandUserId = userId => {
+    if (expandedUserId === userId) {
+      setExpandedUserId('');
+    } else {
+      setExpandedUserId(userId);
+    }
+  };
   const filteredData = data.filter(item =>
     (typeof item.id === 'string' && item.id.includes(searchTerm)) ||
     (typeof item.name === 'string' && item.name.toLowerCase().includes(searchTerm.toLowerCase()))
@@ -30,39 +39,52 @@ const Table = () => {
 
   return (
     <>
-      <div className="overflow-x-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100 scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
-        <input
+    <div className=' flex  flex-col items-center'>
+    <input
           type="text"
-          placeholder="Search by USER ID or USER NAME"
-          className="border border-gray-300 px-3 py-2 rounded-md mb-4 w-full sm:w-auto"
+          placeholder="🔍 Search by USER ID or USER NAME "
+          className="border border-[#7c7c7c] px-3 py-2 text-white bg-transparent rounded-md mb-4 w-full sm:w-[300px]"
           value={searchTerm}
           onChange={handleSearchChange}
         />
+        <p className=' block text-white text-sm font-work sm:hidden'>Scroll left to view more details</p>
+    </div>
+      <div className="overflow-x-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100 scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
+    
         <div className="shadow sm:rounded-lg">
-          <table className="w-full divide-y divide-gray-200">
+          <table className="w-full  divide-y divide-white rounded-sm">
             <thead className="bg-gray-50">
               <tr>
-                <th scope="col" className="px-3 py-2 sm:px-6 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th scope="col" className=" bg-[#1e2f38] text-white px-3 py-2 sm:px-6 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                   User ID
                 </th>
-                <th scope="col" className="px-3 py-2 sm:px-6 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th scope="col" className=" bg-[#1e2f38] text-white px-3 py-2 sm:px-6 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                   User Name
                 </th>
-                <th scope="col" className="px-3 py-2 sm:px-6 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th scope="col" className="bg-[#1e2f38] text-white px-3 py-2 sm:px-6 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                   Number of Quests
                 </th>
-                <th scope="col" className="px-3 py-2 sm:px-6 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th scope="col" className="bg-[#1e2f38] text-white px-3 py-2 sm:px-6 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                   XP
                 </th>
-                <th scope="col" className="px-3 py-2 sm:px-6 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th scope="col" className="bg-[#1e2f38] text-white px-3 py-2 sm:px-6 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                   $KIX Reward
                 </th>
               </tr>
             </thead>
-            <tbody className="bg-white divide-y divide-gray-200">
+            <tbody className="bg-[#051f23] divide-y divide-white text-white ">
               {currentItems.map(item => (
                 <tr key={item.id} className="hover:bg-gray-100">
-                  <td className="px-3 py-2 sm:px-6 sm:py-4 whitespace-nowrap">{item.id}</td>
+              <td
+                    className="px-3 py-2 sm:px-6 sm:py-4 whitespace-nowrap cursor-pointer"
+                    data-tooltip-place="left"
+                    data-tooltip-id="my-tooltip"
+                    onClick={() => toggleExpandUserId(item.id)}
+                    data-tooltip-content={expandedUserId === item.id ? "Click to collapse" : "Click to expand"}
+                    data-for={item.id} // Unique tooltip ID for each user ID
+                  >
+                    {expandedUserId === item.id ? item.id : `${item.id.substring(0, 8)}...${item.id.substring(item.id.length - 5)}`}
+                  </td>
                   <td className="px-3 py-2 sm:px-6 sm:py-4 whitespace-nowrap">{item.name}</td>
                   <td className="px-3 py-2 sm:px-6 sm:py-4 whitespace-nowrap">{item.quest}</td>
                   <td className="px-3 py-2 sm:px-6 sm:py-4 whitespace-nowrap">{item.xp}</td>
@@ -71,6 +93,7 @@ const Table = () => {
               ))}
             </tbody>
           </table>
+          <Tooltip id="my-tooltip" />
         </div>
       </div>
 
@@ -78,17 +101,17 @@ const Table = () => {
         <button
           onClick={() => paginate(currentPage - 1)}
           disabled={currentPage === 1}
-          className="bg-blue-500 text-white px-4 py-2 rounded-md disabled:bg-gray-400 disabled:cursor-not-allowed"
+          className="bg-[#7e007b] text-white px-4 py-2 rounded-md disabled:bg-gray-400 disabled:cursor-not-allowed"
         >
           Previous
         </button>
-        <div>
+        <div className=' text-white font-work'>
           Page {currentPage} of {totalPages}
         </div>
         <button
           onClick={() => paginate(currentPage + 1)}
           disabled={currentPage === totalPages}
-          className="bg-blue-500 text-white px-4 py-2 rounded-md disabled:bg-gray-400 disabled:cursor-not-allowed"
+          className="bg-[#7e007b] text-white px-4 py-2 rounded-md disabled:bg-gray-400 disabled:cursor-not-allowed"
         >
           Next
         </button>
