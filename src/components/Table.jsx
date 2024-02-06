@@ -4,7 +4,7 @@ import data from '../win.json';
 import 'react-tooltip/dist/react-tooltip.css'
 import { Tooltip } from 'react-tooltip'
 
-const ITEMS_PER_PAGE = 20; // Change this value as needed
+const ITEMS_PER_PAGE = 15; // Change this value as needed
 
 const Table = () => {
   const [searchTerm, setSearchTerm] = useState('');
