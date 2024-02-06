@@ -6,7 +6,8 @@ function App() {
     <>
       <div className="container-wrapper mx-auto p-4">
         <Navbar />
-        <h1 className=" text-2xl sm:text-4xl text-center my-6 archo-black text-white font-bold mb-4">Zealy Sprint 1 Rewards</h1>
+        <h1 className=" text-2xl sm:text-4xl text-center mt-3 font-work text-white font-medium ">Zealy Sprint 1 Rewards</h1>
+        <h1 className=" text-lg sm:text-2xl text-center my-1 font-work text-white font-medium mb-4">35,000$KIX Total Prize Fund</h1>
         <Table />
       </div>
     </>
