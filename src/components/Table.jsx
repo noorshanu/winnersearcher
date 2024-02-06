@@ -87,7 +87,9 @@ const Table = () => {
                   </td>
                   <td className="px-3 py-2 sm:px-6 sm:py-4 whitespace-nowrap">{item.name}</td>
                   <td className="px-3 py-2 sm:px-6 sm:py-4 whitespace-nowrap">{item.quest}</td>
-                  <td className="px-3 py-2 sm:px-6 sm:py-4 whitespace-nowrap">{item.xp}</td>
+                  <td className="px-3 py-2 sm:px-6 sm:py-4 whitespace-nowrap">
+  {item.xp.toLocaleString()} {/* Add thousands separator */}
+</td>
                   <td className="px-3 py-2 sm:px-6 sm:py-4 whitespace-nowrap">{item.reward}</td>
                 </tr>
               ))}
