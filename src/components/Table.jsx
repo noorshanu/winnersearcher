@@ -39,7 +39,7 @@ const Table = () => {
 
   return (
     <>
-    <div className=' flex  flex-col items-center'>
+    <div className=' flex  flex-col sm:flex-row items-center sm:items-start' >
     <input
           type="text"
           placeholder="🔍 Search by USER ID or USER NAME "
