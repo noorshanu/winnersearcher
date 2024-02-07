@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import data from '../win.json';
+import data from '../wins.json';
 import 'react-tooltip/dist/react-tooltip.css'
 import { Tooltip } from 'react-tooltip'
 
