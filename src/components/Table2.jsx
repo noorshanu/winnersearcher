@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 
-import data from '../wins.json';
+import data from '../win.json';
 import 'react-tooltip/dist/react-tooltip.css'
 import { Tooltip } from 'react-tooltip'
 
 const ITEMS_PER_PAGE = 15; // Change this value as needed
 
-const Table = () => {
+const Table2 = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const [expandedUserId, setExpandedUserId] = useState('');
@@ -39,7 +39,7 @@ const Table = () => {
 
   return (
     <>
-     <h1 className=' text-white text-base pb-2'>Sprint 1 Rewards</h1>
+    <h1 className=' text-white text-base pb-2'>Sprint 2 Rewards</h1>
     <div className=' flex  flex-col sm:flex-row items-center sm:items-start' >
     <input
           type="text"
@@ -123,4 +123,4 @@ const Table = () => {
   );
 };
 
-export default Table;
+export default Table2;
