@@ -17,10 +17,10 @@ function Navbar() {
         </h2>
       </div>
       <nav className="flex  justify-center gap-4 items-center mx-auto">
-        <NavLink to="/" currentPath={location.pathname}>Home</NavLink>
+        <NavLink to="/" currentPath={location.pathname}>Zealy Reward</NavLink>
         <NavLink to="/galxereward" currentPath={location.pathname}>Galxe Reward</NavLink>
-        <NavLink to="/taskonreward" currentPath={location.pathname}>Taskon Reward</NavLink>
-        <NavLink to="/questreward" currentPath={location.pathname}>Quest Reward</NavLink>
+        <NavLink to="/taskonreward" currentPath={location.pathname}>TaskOn Reward</NavLink>
+        <NavLink to="/questreward" currentPath={location.pathname}>QuestN Reward</NavLink>
       </nav>
     </>
   );
