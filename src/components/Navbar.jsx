@@ -22,6 +22,9 @@ function Navbar() {
           <Link to='/galxereward'  className=' text-sm sm:text-lg font-bold text-white  active:text-[#11c9c7]'>
           Galxe Reward
           </Link>
+          <Link to='/taskonreward'  className=' text-sm sm:text-lg font-bold text-white  active:text-[#11c9c7]'>
+          Taskon Reward
+          </Link>
 
         </nav>
     </>
