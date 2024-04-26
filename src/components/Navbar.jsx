@@ -16,7 +16,7 @@ function Navbar() {
           TRADE-ATHON
         </h2>
       </div>
-      <nav className="flex  justify-center gap-4 items-center mx-auto">
+      <nav className="flex  justify-center gap-4 items-center mx-auto py-4">
         <NavLink to="/" currentPath={location.pathname}>Zealy Reward</NavLink>
         <NavLink to="/galxereward" currentPath={location.pathname}>Galxe Reward</NavLink>
         <NavLink to="/taskonreward" currentPath={location.pathname}>TaskOn Reward</NavLink>
