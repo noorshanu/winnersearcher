@@ -1,8 +1,0 @@
-[
-    { "id": "1", "name": "Noor", "status": "winner" },
-    { "id": "2", "name": "John", "status": "runner-up" },
-    { "id": "3", "name": "Alice", "status": "participant" },
-    { "id": "4", "name": "Bob", "status": "participant" },
-    { "id": "5", "name": "Emma", "status": "participant" }
-  ]
-  

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Navbar() {
   return (
@@ -12,7 +13,17 @@ function Navbar() {
           <h2 className=" font-work text-3xl sm:text-4xl font-normal text-white tracking-[-0.11em]">
             TRADE-ATHON{" "}
           </h2>
+
         </div>
+        <nav  className=' flex justify-center gap-4 items-center'>
+          <Link to='/' className=' text-sm sm:text-lg font-bold text-white active:text-[#11c9c7] '>
+            Home
+          </Link>
+          <Link to='/galxereward'  className=' text-sm sm:text-lg font-bold text-white  active:text-[#11c9c7]'>
+          Galxe Reward
+          </Link>
+
+        </nav>
     </>
   )
 }

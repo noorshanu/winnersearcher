@@ -1,18 +1,29 @@
-import React, { useState } from "react";
-import Navbar from "./components/Navbar";
-import Table from "./components/Table";
-import Table2 from "./components/Table2";
+// import React, { useState } from "react";
+// import Navbar from "./components/Navbar";
+// import Table from "./components/Table";
+// import Table2 from "./components/Table2";
+import { BrowserRouter as Router, Route, Routes, } from "react-router-dom";
+import Home from "./Pages/Home";
+import Galex from "./Pages/Galex";
+
 
 function App() {
-  const [selectedSprint, setSelectedSprint] = useState("sprint1");
+  // const [selectedSprint, setSelectedSprint] = useState("sprint1");
 
-  const handleSprintChange = (sprint) => {
-    setSelectedSprint(sprint);
-  };
+  // const handleSprintChange = (sprint) => {
+  //   setSelectedSprint(sprint);
+  // };
 
   return (
     <>
-      <div className="container-wrapper mx-auto p-4">
+     <Router> {/* Wrap your entire application with the Router component */}
+      <Routes>
+        {/* English Routes */}
+        <Route path="/" element={ <Home/>} />
+        <Route path="/galxereward" element={ <Galex/>} />
+      </Routes>
+      </Router>
+      {/* <div className="container-wrapper mx-auto p-4">
         <Navbar />
         <h1 className="text-2xl sm:text-4xl text-center mt-3 font-work text-white font-medium">
           Zealy Sprint  Rewards
@@ -26,7 +37,7 @@ function App() {
         </div>
         {selectedSprint === "sprint1" && <Table />}
         {selectedSprint === "sprint2" && <Table2 />}
-      </div>
+      </div> */}
     </>
   );
 }
