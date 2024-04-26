@@ -16,7 +16,7 @@ function Navbar() {
           TRADE-ATHON
         </h2>
       </div>
-      <nav className="grid  grid-cols-4 sm:grid-cols-4 justify-center gap-4 items-center mx-auto">
+      <nav className="flex  justify-center gap-4 items-center mx-auto">
         <NavLink to="/" currentPath={location.pathname}>Home</NavLink>
         <NavLink to="/galxereward" currentPath={location.pathname}>Galxe Reward</NavLink>
         <NavLink to="/taskonreward" currentPath={location.pathname}>Taskon Reward</NavLink>
