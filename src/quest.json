@@ -1,0 +1,350 @@
+[
+    {
+     "address": "0x667225CC6E9b407b46B469B861E9D29A99cE9145",
+     "XP": 80,
+     "reward": 100,
+     "id": 1
+    },
+    {
+     "address": "0x2f08B5c23d65f52ecD70617F00B84222e6fAFB43",
+     "XP": 80,
+     "reward": 100,
+     "id": 2
+    },
+    {
+     "address": "0xf594eB6f2CfA350946e5dE32a7a9b058119996eB",
+     "XP": 80,
+     "reward": 100,
+     "id": 3
+    },
+    {
+     "address": "0x23b8A1Ad1F1A2657543ADF6B0C164302b001baC3",
+     "XP": 80,
+     "reward": 100,
+     "id": 4
+    },
+    {
+     "address": "0xBf620B1Ee5cC99978FC2895b7AD841Be7ec52C6C",
+     "XP": 80,
+     "reward": 100,
+     "id": 5
+    },
+    {
+     "address": "0x4132791d238C089cBD5Eb120109f6c776C3892aa",
+     "XP": 80,
+     "reward": 100,
+     "id": 6
+    },
+    {
+     "address": "0x626Dd8ceb6BE6121982D2EeF2F772455d841047C",
+     "XP": 80,
+     "reward": 100,
+     "id": 7
+    },
+    {
+     "address": "0x526FF8E7B28cb931c88E92683679f9102C08f000",
+     "XP": 80,
+     "reward": 100,
+     "id": 8
+    },
+    {
+     "address": "0xa5082438eA589D5D7c5eD2d249A171a0998d57D6",
+     "XP": 80,
+     "reward": 100,
+     "id": 9
+    },
+    {
+     "address": "0x7d690B4EBa3bCF323087CD11A2317f999374DCd5",
+     "XP": 80,
+     "reward": 100,
+     "id": 10
+    },
+    {
+     "address": "0x8f1851e7e417390CA1E45f9B0C23ac6E266aAE1d",
+     "XP": 80,
+     "reward": 100,
+     "id": 11
+    },
+    {
+     "address": "0x04c3E747798322cBBb1d635091cb395db9D89DCE",
+     "XP": 80,
+     "reward": 100,
+     "id": 12
+    },
+    {
+     "address": "0x495BD08B68Bf3Eb334091E43b95fb8Acd854675D",
+     "XP": 80,
+     "reward": 100,
+     "id": 13
+    },
+    {
+     "address": "0x4522F97B6c4c38775cdF42c5E5800e42E177BfC5",
+     "XP": 80,
+     "reward": 100,
+     "id": 14
+    },
+    {
+     "address": "0x1235E231aE289A6CEfCb7Fe4353F427cEd76a25E",
+     "XP": 80,
+     "reward": 100,
+     "id": 15
+    },
+    {
+     "address": "0x3d48D5DAb2379c1f283D97Fe55296c0C6b2e836F",
+     "XP": 80,
+     "reward": 100,
+     "id": 16
+    },
+    {
+     "address": "0xbe964d6c9A45853915ab8be872Ab7cd2c5D45Ef2",
+     "XP": 80,
+     "reward": 100,
+     "id": 17
+    },
+    {
+     "address": "0xb11F0be6F95E066230fd4ea98EA63C36E3764EEE",
+     "XP": 80,
+     "reward": 100,
+     "id": 18
+    },
+    {
+     "address": "0xe6f377131784Df641Bb0E69342501B1B0766281F",
+     "XP": 80,
+     "reward": 100,
+     "id": 19
+    },
+    {
+     "address": "0xd152ee2e051924D167A1a87FA0099Ef125cF89FE",
+     "XP": 80,
+     "reward": 100,
+     "id": 20
+    },
+    {
+     "address": "0x9312225b91068b876126293E080c16f6B6dA4712",
+     "XP": 80,
+     "reward": 100,
+     "id": 21
+    },
+    {
+     "address": "0x224d2E3498E28940F89BDB1AB42C6c3a448025B8",
+     "XP": 80,
+     "reward": 100,
+     "id": 22
+    },
+    {
+     "address": "0xF5C97DcE2b315114573c86E219a41e4A9d1f23aD",
+     "XP": 80,
+     "reward": 100,
+     "id": 23
+    },
+    {
+     "address": "0x5E6C7BC8A9502fB0425E8BD96c7Aa4F7FcAD6793",
+     "XP": 80,
+     "reward": 100,
+     "id": 24
+    },
+    {
+     "address": "0x74C4CB6d8ef214c02e6C01c956DEb1cE78401A0A",
+     "XP": 80,
+     "reward": 100,
+     "id": 25
+    },
+    {
+     "address": "0x7c950961B5AB721F23DFB5Cd074060087ca176Af",
+     "XP": 80,
+     "reward": 100,
+     "id": 26
+    },
+    {
+     "address": "0x70f3a76b225784CA32Eaa0bd167C22B9B719A8F1",
+     "XP": 80,
+     "reward": 100,
+     "id": 27
+    },
+    {
+     "address": "0x3C23669eaFf82f6609099c613468C6b418898B95",
+     "XP": 80,
+     "reward": 100,
+     "id": 28
+    },
+    {
+     "address": "0x8e153f00a1088Bed51FfBB6e9bAB48cF7b020e85",
+     "XP": 80,
+     "reward": 100,
+     "id": 29
+    },
+    {
+     "address": "0x8F84fFA70d6fc9499a3Ae2517cd45fbEe97a7a5e",
+     "XP": 80,
+     "reward": 100,
+     "id": 30
+    },
+    {
+     "address": "0x7Fa618EA206F7c27E12Dd21B3b3713cc66A893DD",
+     "XP": 80,
+     "reward": 100,
+     "id": 31
+    },
+    {
+     "address": "0x0A1bbD17D070BF7C3e954eF0c8B99845f22d2Ac9",
+     "XP": 80,
+     "reward": 100,
+     "id": 32
+    },
+    {
+     "address": "0xE1738b9E56C8ce77B97A99bED5Ba7f05a6dadB29",
+     "XP": 80,
+     "reward": 100,
+     "id": 33
+    },
+    {
+     "address": "0x4A30EfDfC2B1297AEE56f3e7A30c809c49D23110",
+     "XP": 80,
+     "reward": 100,
+     "id": 34
+    },
+    {
+     "address": "0x666ef20127755438202F3479b47D1f2BEa0B8C52",
+     "XP": 80,
+     "reward": 100,
+     "id": 35
+    },
+    {
+     "address": "0x68d2Eb5e19BDcF119363E786083977e9a3efBa9A",
+     "XP": 80,
+     "reward": 100,
+     "id": 36
+    },
+    {
+     "address": "0x1f89bf3325D9d454E3F4fc2A44D23b5e1AE05eAc",
+     "XP": 80,
+     "reward": 100,
+     "id": 37
+    },
+    {
+     "address": "0x93f39c33F5843bCb8392C7A1Fa479B4247169D15",
+     "XP": 80,
+     "reward": 100,
+     "id": 38
+    },
+    {
+     "address": "0xeD337CAaf5dE029604f264a776643213BB0dCaF9",
+     "XP": 80,
+     "reward": 100,
+     "id": 39
+    },
+    {
+     "address": "0xe3abFF76d6CE9cB9Ff60dBbA90D7245624A7A0B2",
+     "XP": 80,
+     "reward": 100,
+     "id": 40
+    },
+    {
+     "address": "0x5Bc275D88f3D58EA38fd1Dcb710A48164E8a24d9",
+     "XP": 80,
+     "reward": 100,
+     "id": 41
+    },
+    {
+     "address": "0xAF465EF3373BE62d976612Bdd15fc3326Ab1f41d",
+     "XP": 80,
+     "reward": 100,
+     "id": 42
+    },
+    {
+     "address": "0x8d599e6E80055487720a1b86337caF2b0213b16b",
+     "XP": 80,
+     "reward": 100,
+     "id": 43
+    },
+    {
+     "address": "0x169D5adD1c5883f4449759F539dD340C9e6E26c5",
+     "XP": 80,
+     "reward": 100,
+     "id": 44
+    },
+    {
+     "address": "0xf661473ab261896B00245CfcAD9468fc7F522500",
+     "XP": 80,
+     "reward": 100,
+     "id": 45
+    },
+    {
+     "address": "0x5Afbee5d2906c358feE07e6799f1B6dbb63C41Bd",
+     "XP": 80,
+     "reward": 100,
+     "id": 46
+    },
+    {
+     "address": "0x40F0470357D868b47be6779f18664FE77fe74A23",
+     "XP": 80,
+     "reward": 100,
+     "id": 47
+    },
+    {
+     "address": "0x7021C18869784A697f98D69181F25e5e904c3d39",
+     "XP": 80,
+     "reward": 100,
+     "id": 48
+    },
+    {
+     "address": "0x5e2C251D8f38CFd6D1D81dC18e7649BaCfa4A468",
+     "XP": 80,
+     "reward": 100,
+     "id": 49
+    },
+    {
+     "address": "0x840309757b4C196F7D4Ed2B9166248D49C94C93f",
+     "XP": 80,
+     "reward": 100,
+     "id": 50
+    },
+    {
+     "address": "0x1Ac2dCF5E74DECF4B497Da44A5ba0893aA00e2A2",
+     "XP": 80,
+     "reward": 100,
+     "id": 51
+    },
+    {
+     "address": "0x4f260ff140b30154A86347F60CB6CB9EA0a68817",
+     "XP": 80,
+     "reward": 100,
+     "id": 52
+    },
+    {
+     "address": "0xF391b01ebdbb2255A24F84C25E71F457FeD83008",
+     "XP": 80,
+     "reward": 100,
+     "id": 53
+    },
+    {
+     "address": "0x12BbC8607e903Bdc025150Acc94990cA9BAEA495",
+     "XP": 80,
+     "reward": 100,
+     "id": 54
+    },
+    {
+     "address": "0xEE8CF69e0eB2F56B87661162f24228691aDfd054",
+     "XP": 80,
+     "reward": 100,
+     "id": 55
+    },
+    {
+     "address": "0xF6C98BD8f4B7dE2B3D743416B7E88a8a0B72fd88",
+     "XP": 80,
+     "reward": 100,
+     "id": 56
+    },
+    {
+     "address": "0x02560df21656e2eBF7Df5AeFBa2798f9c89cc9e6",
+     "XP": 80,
+     "reward": 100,
+     "id": 57
+    },
+    {
+     "address": "0xd19240a765204b33F79339510FE8955b0D995FB8",
+     "XP": 80,
+     "reward": 100,
+     "id": 58
+    }
+   ]

@@ -25,6 +25,9 @@ function Navbar() {
           <Link to='/taskonreward'  className=' text-sm sm:text-lg font-bold text-white  active:text-[#11c9c7]'>
           Taskon Reward
           </Link>
+          <Link to='/questreward'  className=' text-sm sm:text-lg font-bold text-white  active:text-[#11c9c7]'>
+          Quest Reward
+          </Link>
 
         </nav>
     </>
