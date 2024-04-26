@@ -5,6 +5,7 @@
 import { BrowserRouter as Router, Route, Routes, } from "react-router-dom";
 import Home from "./Pages/Home";
 import Galex from "./Pages/Galex";
+import TaskOn from "./Pages/TaskOn";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         {/* English Routes */}
         <Route path="/" element={ <Home/>} />
         <Route path="/galxereward" element={ <Galex/>} />
+        <Route path="/taskonreward" element={<TaskOn/>} />
       </Routes>
       </Router>
       {/* <div className="container-wrapper mx-auto p-4">
