@@ -6,7 +6,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="py-3 sm:py-2 flex justify-center items-center gap-4">
+      <div className="py-3 sm:py-2 flex  justify-center items-center gap-4">
         <img
           src="images/logo.png"
           alt=""
@@ -16,7 +16,7 @@ function Navbar() {
           TRADE-ATHON
         </h2>
       </div>
-      <nav className="flex justify-center gap-4 items-center">
+      <nav className="grid  grid-cols-4 sm:grid-cols-4 justify-center gap-4 items-center mx-auto">
         <NavLink to="/" currentPath={location.pathname}>Home</NavLink>
         <NavLink to="/galxereward" currentPath={location.pathname}>Galxe Reward</NavLink>
         <NavLink to="/taskonreward" currentPath={location.pathname}>Taskon Reward</NavLink>
@@ -32,7 +32,7 @@ function NavLink({ to, currentPath, children }) {
   return (
     <Link
       to={to}
-      className={`text-sm sm:text-lg font-bold text-white ${isActive ? 'text-[#11c9c7]' : ''}`}
+      className={`text-[11px] sm:text-lg font-bold text-white ${isActive ? 'text-[#11c9c7]' : ''}`}
     >
       {children}
     </Link>
