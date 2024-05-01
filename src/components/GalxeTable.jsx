@@ -54,6 +54,9 @@ function GalxeTable() {
           <table className="w-full  divide-y divide-white rounded-sm">
             <thead className="bg-gray-50">
               <tr>
+              <th scope="col" className=" bg-[#1e2f38] text-white px-3 py-2 sm:px-6 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                 s.no
+                </th>
                 <th scope="col" className=" bg-[#1e2f38] text-white px-3 py-2 sm:px-6 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                  Address
                 </th>
@@ -68,6 +71,9 @@ function GalxeTable() {
             <tbody className="bg-[#051f23] divide-y divide-white text-white ">
               {currentItems.map(item => (
                 <tr key={item.id} className="hover:bg-gray-100">
+                  <td className="px-3 py-2 sm:px-6 sm:py-4 whitespace-nowrap">
+                    {item.id}
+                  </td>
               <td
                     className="px-3 py-2 sm:px-6 sm:py-4 whitespace-nowrap cursor-pointer"
                     data-tooltip-place="left"
