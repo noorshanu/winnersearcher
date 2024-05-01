@@ -32,7 +32,7 @@ function NavLink({ to, currentPath, children }) {
   return (
     <Link
       to={to}
-      className={`text-[11px] sm:text-lg font-bold text-white ${isActive ? 'bg-[#051f23] border border-[#fff] text-[#f144f1]  rounded-full px-3 py-1' : ''}`}
+      className={`text-[11px] sm:text-lg font-bold  ${isActive ? 'bg-[#051f23] border border-[#fff] text-[#f144f1]  rounded-full px-3 py-1' : ''}`}
     >
       {children}
     </Link>

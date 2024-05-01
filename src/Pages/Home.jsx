@@ -24,13 +24,13 @@ function Home() {
           <div className="flex gap-2 items-center justify-center">
             <button 
               onClick={() => handleSprintChange("sprint1")} 
-              className={`text-white font-semibold text-lg bg-[#0ea09f] rounded-full border py-1 px-5 ${selectedSprint === "sprint1" ? 'text-[#f144f1] bg-transparent' : ''}`}
+              className={`font-semibold text-lg bg-[#0ea09f] rounded-full border py-1 px-5 ${selectedSprint === "sprint1" ? 'text-[#f144f1] bg-transparent' : ''}`}
             >
               Sprint 1
             </button>
             <button 
               onClick={() => handleSprintChange("sprint2")} 
-              className={`text-white font-semibold text-lg bg-[#0ea09f] rounded-full border py-1 px-5 ${selectedSprint === "sprint2" ? 'text-[#f144f1] bg-transparent' : ''}`}
+              className={` font-semibold text-lg bg-[#0ea09f] rounded-full border py-1 px-5 ${selectedSprint === "sprint2" ? 'text-[#f144f1] bg-transparent' : ''}`}
             >
               Sprint 2
             </button>
