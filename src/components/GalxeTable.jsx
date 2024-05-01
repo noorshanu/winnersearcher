@@ -38,7 +38,7 @@ function GalxeTable() {
   return (
     <>
      {/* <h1 className=' text-white text-base pb-2'>Sprint 1 Rewards</h1> */}
-    <div className=' flex  flex-col sm:flex-row items-center sm:items-start' >
+    <div className=' flex  flex-col sm:flex-row items-center sm:items-start px-4' >
     <input
           type="text"
           placeholder="🔍 Search by ADDRESS"
@@ -96,7 +96,7 @@ function GalxeTable() {
         </div>
       </div>
 
-      <div className="flex justify-between mt-4">
+      <div className="flex justify-between mt-4 px-4">
         <button
           onClick={() => paginate(currentPage - 1)}
           disabled={currentPage === 1}
