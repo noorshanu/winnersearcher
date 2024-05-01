@@ -6,6 +6,7 @@ function TaskOn() {
     <>
       <div className="container-wrapper mx-auto p-4">
         <Navbar/>
+        <div className=' border-2 border-white py-8 rounded-xl  mt-6' >
         <h1 className="text-2xl sm:text-4xl text-center mt-3 font-work text-white font-medium">
         TaskOn Sprint 1 Rewards
         </h1>
@@ -24,6 +25,7 @@ function TaskOn() {
 
         <div>
         <TaskonTable/>
+        </div>
         </div>
         </div>
     </>

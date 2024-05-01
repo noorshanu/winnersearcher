@@ -38,7 +38,7 @@ function QuestTable() {
     const paginate = pageNumber => setCurrentPage(pageNumber);
   return (
     <>
-     <div className=' flex  flex-col sm:flex-row items-center sm:items-start' >
+     <div className=' flex  flex-col sm:flex-row items-center sm:items-start px-4' >
     <input
           type="text"
           placeholder="🔍 Search by ADDRESS"

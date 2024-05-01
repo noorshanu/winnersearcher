@@ -37,7 +37,7 @@ function TaskonTable() {
     const paginate = pageNumber => setCurrentPage(pageNumber);
   return (
     <>
-     <div className=' flex  flex-col sm:flex-row items-center sm:items-start' >
+     <div className=' flex  flex-col sm:flex-row items-center sm:items-start px-4' >
     <input
           type="text"
           placeholder="🔍 Search by ADDRESS"
@@ -99,7 +99,7 @@ function TaskonTable() {
         </div>
       </div>
 
-      <div className="flex justify-between mt-4">
+      <div className="flex justify-between mt-4 px-4">
         <button
           onClick={() => paginate(currentPage - 1)}
           disabled={currentPage === 1}

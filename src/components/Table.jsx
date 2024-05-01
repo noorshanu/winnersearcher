@@ -39,8 +39,8 @@ const Table = () => {
 
   return (
     <>
-     <h1 className=' text-white text-base pb-2'>Sprint 1 Rewards</h1>
-    <div className=' flex  flex-col sm:flex-row items-center sm:items-start' >
+     <h1 className=' text-white text-base pb-2 px-4'>Sprint 1 Rewards</h1>
+    <div className=' flex  flex-col sm:flex-row items-center sm:items-start px-4' >
     <input
           type="text"
           placeholder="🔍 Search by USER ID or USER NAME "
@@ -100,7 +100,7 @@ const Table = () => {
         </div>
       </div>
 
-      <div className="flex justify-between mt-4">
+      <div className="flex justify-between mt-4 px-4">
         <button
           onClick={() => paginate(currentPage - 1)}
           disabled={currentPage === 1}
