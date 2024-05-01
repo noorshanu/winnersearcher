@@ -24,7 +24,7 @@ function GalxeTable() {
       }
     };
     const filteredData = data.filter(item =>
-      (typeof item.address === 'string' && item.address.includes(searchTerm)) 
+      (typeof item.address === 'string' && item.address.toLowerCase().includes(searchTerm.toLowerCase())) 
     );
     
   
